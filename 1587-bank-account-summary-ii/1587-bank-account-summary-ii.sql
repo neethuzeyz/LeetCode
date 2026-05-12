@@ -4,4 +4,4 @@ from users u
  inner join transactions t
  on t.account =u.account
  group by u.name,u.account
- having sum(t.amount)>10000
+ having sum(t.amount)>10000;

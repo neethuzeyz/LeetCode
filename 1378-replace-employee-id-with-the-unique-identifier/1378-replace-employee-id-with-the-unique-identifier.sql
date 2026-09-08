@@ -1,3 +1,3 @@
-select eu.unique_id as unique_id,e.name as name
-from employees e left join EmployeeUNI 
-eu on e.id=eu.id
+select EmployeeUNI.unique_id, employees.name
+from employees
+left join employeeUNI on Employees.id = EmployeeUNI.id
